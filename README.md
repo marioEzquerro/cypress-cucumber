@@ -1,7 +1,4 @@
-# cypress-cucumber-boilerplate-for-e2e-testing
-
-<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQF1dg2KtKFdPg/company-logo_200_200/0/1626295436859?e=2159024400&v=beta&t=Ib_T9PXXQxkHRKnj3Oe65EKuR6EAh01IgAA6IGvU0FY" alt="exemplo imagem">
-
+# Cypress-cucumber
 > Cypress 10+ with Cucumber boilerplate project.
 
 ### 💻 Topics
@@ -22,15 +19,21 @@ Integrated with:
 2. Optional: Java 8 for Allure Reporter
 3. Optional: Json-formatter for Native Reporter option(depends on your OS: https://github.com/cucumber/json-formatter)
 
+
 ## 🚀 Install the project
 
-Install project dependencies with: npm i
+Install project dependencies with: `npm i`.
+
+Ensure allure reports is intalled `npm install --save-dev allure-cypress`.
+
+Cucumber preprocessor installation: `npm install cypress @badeball/cypress-cucumber-preprocessor --save-dev`.
 
 ## Run the demo:
+To run the visual interface of cyress `use npx cypres open`
 
 1. Standard Execution: npm run cypress:execution
 2. Native report(with JSON FORMATTER): Check how to do it in this video: [Cucumber BDD Report - YouTube](https://www.youtube.com/watch?v=5AGXK9cL2fs&t=2s&ab_channel=JoanMedia)
-3. Allure Report first ensure allure is intalled ```npm install --save-dev allure-cypress``` and jdk in order to generate a report
+3. Allure Report 
    1. npm run cypress:execution-allure
    2. npm run allure:report
    3. allure open
@@ -44,7 +47,7 @@ Install project dependencies with: npm i
 
 ## Extra steps
 
-Change cucumberautocomplete extension .json file to:
+In order to allow Ctrl + Click in .feature files to show implementations change 'cucumberautocomplete' extension in visual studio code .json file to:
 
 ```cmd
 {
