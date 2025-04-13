@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["es6", "dom"],
+    "types": ["cypress", "@types/node"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "baseUrl": "./",
+    "outDir": "dist"
+  },
+  "include": ["cypress/**/*.ts", "cypress.config.ts", "cypress/support/commands.js"],
+  "exclude": ["node_modules"]
+}

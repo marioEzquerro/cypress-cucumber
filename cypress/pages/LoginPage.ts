@@ -1,4 +1,5 @@
 class LoginPage {
+
   elements = {
     usernameInput: () => cy.get("#user-name"),
     passwordInput: () => cy.get("#password"),
@@ -6,11 +7,11 @@ class LoginPage {
     errorMessage: () => cy.get('h3[data-test="error"]'),
   };
 
-  typeUsername(username) {
+  typeUsername(username: string) {
     this.elements.usernameInput().type(username);
   }
 
-  typePassword(password) {
+  typePassword(password: string) {
     this.elements.passwordInput().type(password);
   }
 
@@ -18,11 +19,11 @@ class LoginPage {
     this.elements.loginBtn().click();
   }
 
-  submitLogin(username,password){
+  submitLogin(username: string, password: string) {
     this.elements.usernameInput().type(username);
     this.elements.passwordInput().type(password);
     this.elements.loginBtn().click();
   }
 }
 
-export const loginPage = new LoginPage();
+export default LoginPage;
