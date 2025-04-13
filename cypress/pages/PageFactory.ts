@@ -7,6 +7,7 @@ export class PageFactory {
 
   private static getPageInstance<T>(pageClass: PageClass<T>): T {
     const className = pageClass.name;
+    
     if (!this.instances.has(className)) {
       this.instances.set(className, new pageClass());
     }

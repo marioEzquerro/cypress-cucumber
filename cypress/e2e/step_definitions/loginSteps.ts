@@ -16,12 +16,15 @@ When("A user enters the username {string}, the password {string}, and clicks on 
 
 });
 
+When("A user provides incorrect credentials {string} and {string}, and clicks on the login button", (username: string, password: string) => {
+  loginPage.submitLogin(username, password)
+});
+
 When("A user provides incorrect credentials, and clicks on the login button", (table: any) => {
   table.hashes().forEach((row: any) => {
     cy.log(row.username);
     cy.log(row.password);
     loginPage.submitLogin(row.username, row.password)
-
   });
 });
 

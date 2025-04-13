@@ -14,6 +14,6 @@
     "baseUrl": "./",
     "outDir": "dist"
   },
-  "include": ["cypress/**/*.ts", "cypress.config.ts", "cypress/support/commands.js"],
+  "include": ["cypress/**/*.ts", "cypress.config.ts", "cypress/support/commands.ts"],
   "exclude": ["node_modules"]
 }
