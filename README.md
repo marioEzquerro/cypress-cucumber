@@ -40,3 +40,30 @@ Install project dependencies with: npm i
 ##  Sample repo to generate an allure report as an artifact using GH Actions
 
 * https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
+
+
+## Extra steps
+
+Change cucumberautocomplete extension .json file to:
+
+```cmd
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "git.autofetch": true,
+    "cucumberautocomplete.steps": [
+      "cypress/e2e/step_definitions/**/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "cypress/e2e/features/**/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true
+}
+```
+  
