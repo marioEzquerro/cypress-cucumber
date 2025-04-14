@@ -1,8 +1,4 @@
-import {
-  Given,
-  When,
-  Then,
-} from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { PageFactory } from "cypress/pages/PageFactory";
 
 const loginPage = PageFactory.getLoginPage();
@@ -13,7 +9,6 @@ Given("A web browser is at the saucelabs login page", () => {
 
 When("A user enters the username {string}, the password {string}, and clicks on the login button", (username: string, password: string) => {
   loginPage.submitLogin(username, password)
-
 });
 
 When("A user provides incorrect credentials {string} and {string}, and clicks on the login button", (username: string, password: string) => {

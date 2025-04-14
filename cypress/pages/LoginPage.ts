@@ -20,9 +20,9 @@ class LoginPage {
   }
 
   submitLogin(username: string, password: string) {
-    this.elements.usernameInput().type(username);
-    this.elements.passwordInput().type(password);
-    this.elements.loginBtn().click();
+    this.typeUsername(username);
+    this.typePassword(password);
+    this.clickLogin()
   }
 }
 
